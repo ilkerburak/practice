@@ -25,9 +25,10 @@ function sortByFreq($str){
             $freqArr[ord($char)] = $freqArr[ord($char)] + 1;
         }
     }
+    
     // sort
+    krsort($freqArr);
 
-    ksort($freqArr);
     foreach($freqArr as $key=>$value){
         echo repeatChar($key, $value);
     }
