@@ -25,7 +25,7 @@ function sortByFreq($str){
             $freqArr[ord($char)] = $freqArr[ord($char)] + 1;
         }
     }
-    
+
     // sort
     krsort($freqArr);
 
