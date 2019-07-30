@@ -36,7 +36,7 @@ function longestSub($str){
         }
         if(count($tmpArr) > count($maxArr)) $maxArr = $tmpArr;
     }
-    return implode("", $maxArr);
+    return count($maxArr);
 }
 
 echo longestSub("abcabcbb");
