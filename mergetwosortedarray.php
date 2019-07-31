@@ -15,8 +15,9 @@ function mergeArray($arr1, $arr2){
     $arr = [];
     $indexFirst = 0;
     $indexSecond = 0;
-
-    while($indexFirst < count($arr1) && $indexSecond < count($arr2)) {
+    $total = count($arr1) + count($arr2);
+    $i = 0;
+    while($i < $total) {
         if (!isset($arr1[$indexFirst])) {
             $arr[] = $arr2[$indexSecond];
             $indexSecond++;
@@ -32,6 +33,7 @@ function mergeArray($arr1, $arr2){
                 $indexSecond++;
             }
         }
+        $i++;
     }
 
     return $arr;
