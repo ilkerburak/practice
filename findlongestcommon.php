@@ -28,7 +28,6 @@ function findLongestCommon($arr){
 
     $longestArr = [];
     $tmpArr = [];
-
     for($i = 0; $i < $minCharCount; $i++){
         $tmp = null;
         $sameCount = 0;
@@ -54,8 +53,6 @@ function findLongestCommon($arr){
                 $tmpArr[] = $tmp;
             }
         }
-
-
     }
 
     return $longestArr;
